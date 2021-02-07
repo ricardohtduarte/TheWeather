@@ -9,20 +9,12 @@ import SwiftUI
 
 struct CityListView: View {
     @State private var isShowingSheet = false
+    @ObservedObject private var viewModel = CityListViewModel()
     
     var body: some View {
         NavigationView {
-            List {
-                NavigationLink(destination: CityWeatherView()) {
-                    HStack {
-                        Text("Lisbon")
-                        Spacer()
-                        Text("20º")
-                    }
-                    .padding()
-                    .font(.system(size: 50))
-                }
-                .background(Color.blue).foregroundColor(.white)
+            List(viewModel.cityList) { city in
+                CityListRow(city: city)
             }
             .navigationBarTitle(Text("My Cities"))
             .navigationBarItems(trailing:
@@ -36,5 +28,23 @@ struct CityListView: View {
                 }
             )
         }
+    }
+}
+
+struct CityListRow: View {
+    let city: CityPreview
+    
+    var body: some View {
+        NavigationLink(destination: CityWeatherView()) {
+            HStack {
+                Text(city.name)
+                Spacer()
+                Text(String(city.temperature))
+            }
+        }
+        .padding()
+        .font(.system(size: 50))
+        .background(Color.blue)
+        .foregroundColor(.white)
     }
 }

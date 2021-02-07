@@ -19,6 +19,7 @@
 		0DDC11A725D045E600B8C1C2 /* CityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC11A625D045E600B8C1C2 /* CityListView.swift */; };
 		0DDC11AA25D0460900B8C1C2 /* AddNewCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC11A925D0460900B8C1C2 /* AddNewCityView.swift */; };
 		0DDC11AD25D0463A00B8C1C2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC11AC25D0463A00B8C1C2 /* SettingsView.swift */; };
+		0DDC11B525D07A0600B8C1C2 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC11B425D07A0600B8C1C2 /* CityListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0DDC11A625D045E600B8C1C2 /* CityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListView.swift; sourceTree = "<group>"; };
 		0DDC11A925D0460900B8C1C2 /* AddNewCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCityView.swift; sourceTree = "<group>"; };
 		0DDC11AC25D0463A00B8C1C2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0DDC11B425D07A0600B8C1C2 /* CityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				0D31E21925CF3CF500B907B8 /* CityWeatherViewModel.swift */,
+				0DDC11B425D07A0600B8C1C2 /* CityListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				0D31E21A25CF3CF500B907B8 /* CityWeatherViewModel.swift in Sources */,
 				0DDC11A425D0458800B8C1C2 /* CityAppTabView.swift in Sources */,
 				0D31E20525CF31F400B907B8 /* TheWeatherApp.swift in Sources */,
+				0DDC11B525D07A0600B8C1C2 /* CityListViewModel.swift in Sources */,
 				0DDC11A725D045E600B8C1C2 /* CityListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
