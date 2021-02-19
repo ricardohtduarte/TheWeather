@@ -13,7 +13,7 @@ struct CityPreview: Identifiable {
     let temperature: Int
 }
 
-final class CityListViewModel: ObservableObject{
+final class CityListViewModel: ObservableObject {
     let cityList: [CityPreview] =
         [
             CityPreview(name: "London", temperature: 2),
